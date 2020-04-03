@@ -1,18 +1,28 @@
 # the-selfish-hamster-backend
 Nodejs Express backend
 
-## prepare local
+## prepare local development environment
 
+### Windows
+```
+choco install mongodb
+```
+
+### Macos
+
+
+### Linux
 ```
 sudo apt install mongo
 sudo apt install nodejs
 ```
 
-
 ## how to start
-
-
-
+TODO automate tsc run with node-tsc
+```
+tsc
+npm run start
+```
 
 ## Initial setup
 
