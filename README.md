@@ -24,6 +24,11 @@ tsc
 npm run start
 ```
 
+open a browser and execute
+```
+http://localhost:3000/users
+```
+
 ## Initial setup
 
 Let's create a simple application called "user" which stores users in the database

@@ -49,11 +49,17 @@ typeorm_1.createConnection().then(function (connection) {
     // register routes
     app.get("/users", function (req, res) {
         return __awaiter(this, void 0, void 0, function () {
-            var users;
+            var user, results, users;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, userRepository.find()];
+                    case 0: return [4 /*yield*/, userRepository.create()];
                     case 1:
+                        user = _a.sent();
+                        return [4 /*yield*/, userRepository.save(user)];
+                    case 2:
+                        results = _a.sent();
+                        return [4 /*yield*/, userRepository.find()];
+                    case 3:
                         users = _a.sent();
                         res.json(users);
                         return [2 /*return*/];
